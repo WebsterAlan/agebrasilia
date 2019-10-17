@@ -2,42 +2,19 @@
 
 
 <link rel="stylesheet" href="jquery.modally.css">
-
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/inobounce/0.2.0/inobounce.min.js"></script>
-
 <script type="text/javascript" src="jquery.modally.js"></script>
 
-
-
-
-
-
-
 <body>
-
-
-
 <div class="page-wrapper">
+<div class="preloader"></div>
 
-    <div class="preloader"></div>
+<?php include "include/menu.php" ?>
+<section class="page-title" style="background-image:url(images/background/bg-page-title-1.jpg);">
 
-
-
-
-
-  <?php include "include/menu.php" ?>
-
-
-
-  
-
-    <section class="page-title" style="background-image:url(images/background/bg-page-title-1.jpg);">
-
-        <div class="auto-container">
-
-            <h1>Produtos</h1>
+<div class="auto-container">
+<h1>Produtos</h1>
 
         </div>
 
@@ -337,52 +314,24 @@
 
                 </ul>
 
-            </div>
-
-                 
+            </div>            
 
         </div>
 
     </section>
 
-    
-
-    
-
-    <!--Main Footer / Footer Style One-->
 
    <?php include "include/rodape.php" ?>
 
-    
-
 </div>
 
-<!--End pagewrapper-->
-
-
-
-<!--Scroll to top-->
-
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-long-arrow-up"></span></div>
-
-
-
-
-
-
-
 <script src="js/bootstrap.min.js"></script>
-
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-
 <script src="js/revolution.min.js"></script>
-
 <script src="js/jquery.fancybox.pack.js"></script>
-
 <script src="js/jquery.fancybox-media.js"></script>
-
 <script src="js/jquery.countdown.js"></script>
-
 <script src="js/script.js"></script>
 
 
@@ -402,8 +351,6 @@
             });
 
         </script>
-
-        <!-- Place this tag in your head or just before your close body tag. -->
 
         <script async defer src="https://buttons.github.io/buttons.js"></script>
 
