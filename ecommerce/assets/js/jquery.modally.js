@@ -390,10 +390,7 @@
     window.modally = $.fn.modally;
 
     //close last modal on escape
-    $(document).on('keyup', function(e){
-        var $last_modally = $('.modally-wrap.open.last');
-        $last_modally.data('modally').close();
-    });
+   
 
     function _modallyTrigger(e, elem, action) {
         var href = $(elem).attr('href');
@@ -402,14 +399,7 @@
             || href === null
             || href === ''
             || href === '#') {
-            if (action === 'close') {
-                var $parent = $(e.target).closest('.modally-wrap');
-                if ($parent.length) {
-                    var data = $parent.data('modally');
-                    data.close();
-                    return;
-                }
-            }
+            
 
             console.error('jquery.modally >> href attribute needs to contain the existing modal ID');
             return;
@@ -431,12 +421,9 @@
         _modallyTrigger(e, this, 'open');
     }
 
-    function _modallyTriggerClose(e) {
-        e.preventDefault();
-        _modallyTrigger(e, this, 'close');
-    }
+    
 
     $(document).on('click', 'a[target="_modal"]', _modallyTriggerOpen);
     $(document).on('click', 'a[target="_modal:open"]', _modallyTriggerOpen);
-    $(document).on('click', 'a[target="_modal:close"]', _modallyTriggerClose);
+    
 })(jQuery);

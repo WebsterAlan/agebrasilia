@@ -1,71 +1,13 @@
 <?php include "include/header.php" ?>
-<style>
- .hero p {
-font-size: 18px;
- letter-spacing: 0.5px;
-            }
 
-            .hero .table {
-                min-height: 100vh;
-            }
-
-            .hero .table .cell {
-                padding-top: 40px;
-                padding-bottom: 40px;
-                text-align: center;
-            }
-
-          
-
-            .hero .button {
-                margin-top: 20px;
-            }
-
-            .modal-title {
-             
-            }
-
-           
-
-            .modally-wrap.open:not(.last) {
-                filter: blur(5px);
-            }
-
-            
-
-            
-            .modally .button-wrap {
-                text-align: right;
-            }
-
-            .modally .button-wrap .button {
-                margin-left: 16px;
-            }
-
-            
-
-           
-
-            
-        </style>
-
-        <link rel="stylesheet" href="jquery.modally.css">
+<link rel="stylesheet" href="jquery.modally.css">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/inobounce/0.2.0/inobounce.min.js"></script>
 <script type="text/javascript" src="jquery.modally.js"></script>
-
-
-
 <body>
-
 <div class="page-wrapper">
-    <div class="preloader"></div>
-
-
-  <?php include "include/menu.php" ?>
-
-  
-    <section class="page-title" style="background-image:url(images/background/bg-page-title-1.jpg);">
+<div class="preloader"></div>
+<?php include "include/menu.php" ?>
+<section class="page-title" style="background-image:url(images/background/bg-page-title-1.jpg);">
         <div class="auto-container">
             <h1>Produtos</h1>
         </div>
@@ -78,58 +20,51 @@ font-size: 18px;
 
 
 
-<!------------------------Modal-------------------------------->
-        
-        <a href="#ipsum" target="_modal" style="margin-right: 6px;">uuuu!</a>
-               
-                <div style="font-size:14px" id="ipsum">
-   <h1 class="modal-title">Carrinho</h1>
- <ul class="list-group">
-  
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-    <img style="max-width: 58px" src="images/resource/products/image-12.jpg">
-    <span style="float: left; margin-left: -25%">Tomate Cereja</span>
-    <span class="badge badge-primary badge-pill">7</span>
-  </li>
+
+<!----------------------------MODAL PRODUTO-------------------------------------->               
+                <div style="font-size:14px" id="produto">
+   <section class="product-details">
+            <div class="auto-container">
+                <div class="basic-details">
+                    <div class="row clearfix">
+                        <div class="image-column col-md-4 col-sm-5 col-xs-12">
+                            <figure class="image-box"><a href="images/resource/products/image-12.jpg" class="lightbox-image" title="Image Caption Here"><img src="images/resource/products/image-12.jpg" alt=""></a></figure>
+                        </div>
+                        <div class="info-column col-md-8 col-sm-7 col-xs-12">
+                            <div class="details-header">
+                                <h4>Nome do Produto</h4>
+                                <div class="item-price">R$ 124,00</div>
+                            </div>
+                            
+ <div class="text">Descrição do PRoduto informações completas do produto exmplo de texto</div>
+                            
+                          
 
 
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-        
-         <img style="max-width: 58px" src="images/resource/products/image-12.jpg">
-         <span style="float: left; margin-left: -25%">Outro Produto</span>   
-
-    <span class="badge badge-primary badge-pill">8</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-     <img style="max-width: 58px" src="images/resource/products/image-12.jpg">
-     <span style="float: left; margin-left: -25%">Mais um Produto</span>   
-    <span class="badge badge-primary badge-pill">1</span>
-  </li>
-</ul>
-                    <div class="button-wrap">
-                       <!-- <a target="_modal:close" class="button small">Close me!</a>-->
-                        <a href="#ipsum" target="_modal" class="button gradient small">Finalizar Pedido!</a>
+                            <div class="clearfix">
+                                <div class="item-quantity"><div class="quantity-spinner"><button type="button" class="minus"><span class="fa fa-minus"></span></button><input type="text" name="product" value="1" class="prod_qty"><button type="button" class="plus"><span class="fa fa-plus"></span></button></div></div>
+                                <button type="button" class="theme-btn btn-style-one add-to-cart">Adcionar no Carrinho<span class="icon fa fa-shopping-cart"></span></button>
+                            </div>
+                            
+                        </div>
                     </div>
+                </div>                       
+            </div>
+        </section>
                 </div>
+<!-------------------------FIM MODAL  PRODUTO----------------------------------->
 
 
-
-
-
-
-<!------------------------------------------------------------>
-
-
-         <!-------------------------------------------------------------->                
+         <!-----------------------FORMULARIO DE BUSCA--------------------------------------->                
          <div class="row justify-content-center">
-                        <div  style="width:85%">
-                            <form class="card card-sm">
-                                <div class="card-body row no-gutters align-items-center">
+                        <div  style="width:70%">
+                            <form  style="border-bottom: solid #28a745 2px;" class="card-sm">
+                                <div class="  card-body row no-gutters align-items-center">
                                     <div class="col-auto">
                                         <i class="glyphicon glyphicon-search"></i>
                                     </div>
                                     <div class="col">
-                                        <input style="font-size:18px" class="form-control form-control-lg form-control-borderless" type="search" placeholder="Pesquisar">
+                                        <input style="font-size:18px;" class="form-control  form-control-lg form-control-borderless" type="search" placeholder="Pesquisar">
                                     </div>
                                     <div class="col-auto">
                                         <button style="font-size:18px" class=" btn-lg btn-success" type="submit">Buscar</button>
@@ -156,7 +91,7 @@ font-size: 18px;
   
   
            
-        <a href="#">
+        <a href="#produto" target="_modal">
           <img src="http://agebrasilia.com.br/site/up-img/48f74b4088c7f7c06441bf19918ff7e3.jpg" alt="">
         </a>
             
@@ -198,35 +133,14 @@ font-size: 18px;
     </section>
     
     
-    <!--Main Footer / Footer Style One-->
-   <?php include "include/rodape.php" ?>
-    
+    <!--RODAPE-->
+<?php include "include/rodape.php" ?>  
 </div>
-<!--End pagewrapper-->
-
-<!--Scroll to top-->
+<!--Scroll para topo-->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-long-arrow-up"></span></div>
-
-
-
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="js/revolution.min.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.fancybox-media.js"></script>
-<script src="js/jquery.countdown.js"></script>
-<script src="js/script.js"></script>
-
- <script type="text/javascript">
-            jQuery(document).ready(function() {
-                $('#ipsum').modally('ipsum', {max_width: 400});
-                $('#lorem').modally();
-                $('#dolor').modally();
-                modally('video-modal', {video: true, max_width: 400});
-            });
-        </script>
-        <!-- Place this tag in your head or just before your close body tag. -->
-        <script async defer src="https://buttons.github.io/buttons.js"></script>
+<?php include "include/footer.php" ?>
+        
+    
 
 </body>
 </html>

@@ -29,6 +29,8 @@
                                     <li><a href="about-us.html">PRODUTORES</a></li>
                                     <li><a href="about-us.html">AGE</a></li>
                                     <li><a href="contact.html">CONTATO</a></li>
+                                    <li><a href="#login" target="_modal">LOGAR</a></li>
+
                                  </ul>
                             </div>
                         </nav><!-- Main Menu End-->
@@ -47,7 +49,7 @@
 
     
     </header>
-    <section class="hidden-bar right-align">
+    <section style="z-index:1000" class="hidden-bar right-align">
         
         <div class="hidden-bar-closer">
             <button class="btn"><i class="fa fa-close"></i></button>
@@ -61,26 +63,46 @@
                 <a href="index.html"><img src="images/logo.png" alt=""></a>			
             </div><!-- /.logo -->
             
-            <!-- .Side-menu -->
+           
             <div class="side-menu">
-            <!-- .navigation -->
+           
                 <ul class="navigation">
-                                    <li><a href="#">LOJA</a></li>
-                                    <li><a href="about-us.html">PONTOS DE VENDA</a></li>
-                                    <li><a href="about-us.html">PRODUTORES</a></li>
-                                    <li><a href="about-us.html">AGE</a></li>
-                                    <li><a href="contact.html">CONTATO</a></li>
+                                    <li><a href="loja.php">PRODUTOS</a></li>
+                                    <li><a href="pontos.html">PONTOS DE VENDA</a></li>
+                                    <li><a href="loja.html">PRODUTORES</a></li>
+                                    <li><a href="age.html">AGE</a></li>
+                                    <li><a href="conato.html">CONTATO</a></li>
+                                     <li><a href="#login" target="_modal">LOGAR</a></li>
                                  </ul>
             </div><!-- /.Side-menu -->
         
             <div class="social-icons">
                 <ul>
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                 </ul>
             </div>
         
-        </div><!-- / Hidden Bar Wrapper -->
+        </div>
     </section>
+
+
+    <!--------------------------------MODAL LOGIN------------------------------------------>
+        <div style="z-index:5000" id="login">
+        <section class="product-details">
+        <form class="auto-container text-center">
+        <img class="mb-4" src="http://agebrasilia.com.br/site/images/logo.png" alt="" width="152">
+    
+    
+      <input style="font-size: 20px; height: 35px" type="email" id="inputEmail" class="form-control text" placeholder="Email" required autofocus><br>
+     
+      <input style="font-size:20px; height: 35px" type="password" id="inputPassword" class="form-control" placeholder="Senha" required><br>
+     
+      <button style="font-size: 20px" class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 1992-2019</p>
+    </form>
+            </section>
+
+        </div>
+
+<!------------------FIM MODAL LOGIN------------------------------------------>  
