@@ -1,25 +1,25 @@
-<?php include "application/templates/header.php"?>
+<?php include "include/header.php"?>
 
 <body>
 
 <div class="page-wrapper">
-
+ 	
     <!-- Preloader -->
     <div class="preloader"></div>
-
+ 	
     <!-- Main Header-->
-    <?php include "application/templates/menu.php"?>
+    <?php include "include/menu.php"?>
     <!-- / Hidden Bar -->
-
-
+    
+    
     <!--Page Title-->
-    <section class="page-title" style="background-image:url(assets/images/background/bg-page-title-1.jpg);">
+    <section class="page-title" style="background-image:url(images/background/bg-page-title-1.jpg);">
         <div class="auto-container">
             <h1>Seu carrinho</h1>
         </div>
     </section>
-
-
+    
+    
     <!--Cart Section-->
     <section class="cart-section">
         <div class="auto-container">
@@ -44,7 +44,7 @@
                             <tr>
                                 <td colspan="2" class="prod-column">
                                     <div class="column-box">
-                                        <figure class="prod-thumb"><a href="#"><img src="assets/images/resource/products/image-12.jpg" alt=""></a></figure>
+                                        <figure class="prod-thumb"><a href="#"><img src="images/resource/products/image-12.jpg" alt=""></a></figure>
                                         <div class="prod-title">Nome do Produto</div>
                                        </div>
                                 </td>
@@ -59,7 +59,7 @@
                     </table>
                 </div>
 
-
+               
 
                     <div class="pull-right"><br>
                         <button type="button" class="theme-btn btn-style-one">Atualizar</button>
@@ -88,17 +88,25 @@
 
         </div>
     </section>
-
-
+    
+    
     <!--Main Footer / Footer Style One-->
-    <?php include "application/templates/rodape.php"?>
-
+    <?php include "include/rodape.php"?>
+    
 </div>
 <!--End pagewrapper-->
 
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-long-arrow-up"></span></div>
 
-<?php include "application/templates/footer.php"?>
+
+<script src="js/jquery.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/script.js"></script>
+
 </body>
 </html>
