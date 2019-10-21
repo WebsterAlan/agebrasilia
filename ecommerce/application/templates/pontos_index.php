@@ -4,7 +4,7 @@
             <div class="sec-title-one">
                 <h2>Pontos de Venda</h2>
             </div>
-            
+
             <div class="row clearfix">
                 <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
                     <!--Default Team Member-->
@@ -25,13 +25,13 @@
                                     </div>
                                     <div class="social-links">
                                         <a href="#mapa" target="_modal"><img src="https://img.icons8.com/plasticine/50/000000/marker.png"></a>
-                                        
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <!--Default Team Member-->
                     <div class="default-team-member alternate">
                         <div class="inner-box clearfix">
@@ -48,15 +48,15 @@
                                     </div>
                                     <div class="social-links">
                                         <a href="#"><img src="https://img.icons8.com/plasticine/50/000000/marker.png"></a>
-                                  
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
-                
+
                 <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <!--Default Team Member / Vertical-->
                     <div class="default-team-member vertical">
@@ -70,18 +70,18 @@
                                 <div class="text">
                                     <p><b>Quinta-feira: </b>  8:00hs | 12:00hs</p>
                                     <p>Tel: <b>(61) 9 9266-6891</b></p>
-                                   
+
                                 </div>
                                     <div class="social-links">
                                         <a href="#"> <img src="https://img.icons8.com/plasticine/50/000000/marker.png"></a>
-                                       
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>

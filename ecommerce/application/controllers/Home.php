@@ -4,9 +4,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Home extends CI_Controller{
 
     public function index(){
-      $this->load->model('login_model');
-      $this->login_model->userConsult();
-      $this->load->view('loja');
+      $this->load->model('product_model');
+      $object = $this->product_model->listarTodosProdutos();
+      //var_dump($object);
+      //die();
+      $data['products'] = $object;
+      $this->load->view('loja',$data);
     }
 }
  ?>
