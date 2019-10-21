@@ -1,4 +1,7 @@
 <?php include "include/header.php"?>
+<link rel="stylesheet" href="jquery.modally.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.modally.js"></script>
 
 <body>
 
@@ -34,14 +37,14 @@
                         <div class="shop-form">
                             <form method="post" action="checkout.html">
 
-                                <div class="default-title"><h2>Dados Para Entrega</h2></div>
+                                <div class="default-title"><h2>cadastro do Usuário</h2></div>
 
                                 <div class="row clearfix">
 
                                     <!--Form Group-->
                                     <div class="form-group col-xs-12">
                                         <div class="field-label">Nome Completo <sup>*</sup></div>
-                                        <input type="text" name="field-name" value="" placeholder="">
+                                        <input type="text" name="field-name" value="" placeholder="Qual seu  nome">
                                     </div>
 
                                     <!--Form Group-->
@@ -50,13 +53,23 @@
                                     <!--Form Group-->
                                     <div class="form-group col-md-6 col-sm-6 col-xs-12">
                                         <div class="field-label">Email </div>
-                                        <input type="text" name="field-name" value="" placeholder="">
+                                        <input type="text" name="field-name" value="" placeholder="nome@email.com">
                                     </div>
 
                                     <!--Form Group-->
                                     <div class="form-group col-md-6 col-sm-6 col-xs-12">
                                         <div class="field-label">Telefone<sup>*</sup></div>
-                                        <input type="email" name="field-name" value="" placeholder="">
+                                        <input type="email" name="field-name" value="" placeholder="61 3456-1234">
+                                    </div>
+
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="field-label">cpf<sup>*</sup></div>
+                                        <input type="email" name="field-name" value="" placeholder="123.123.123-12">
+                                    </div>
+
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <div class="field-label">Crie uma senha <sup>*</sup></div>
+                                        <input type="email" name="field-name" value="" placeholder="Senha do Usuário">
                                     </div>
 
                                     <!-----------------Onde entregar---------------------------->
@@ -83,18 +96,7 @@
                                     </div>
 
 
-                                    <div class="radio-option">
-                                        <input type="radio" name="payment-group" id="payment-1" checked>
-                                        
-                                        <label for="payment-1"><strong>Definir local de entrega</strong>
-                                        <span style="width: 150%" class="small-text">
-                                              
-                                        
-                                        <input style="width: 100%" type="text" name="field-name" value="" placeholder="">
-                                   
-                                        </span>
-                                        </label>
-                                    </div>
+                                    
 
                                 </li>
                                
@@ -181,13 +183,7 @@
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-long-arrow-up"></span></div>
 
 
-<script src="js/jquery.js"></script> 
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.fancybox-media.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/script.js"></script>
+<?php include "include/footer.php"?>
 
 </body>
 </html>

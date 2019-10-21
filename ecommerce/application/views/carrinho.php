@@ -1,4 +1,7 @@
 <?php include "include/header.php"?>
+<link rel="stylesheet" href="jquery.modally.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.modally.js"></script>
 
 <body>
 
@@ -100,13 +103,6 @@
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-long-arrow-up"></span></div>
 
 
-<script src="js/jquery.js"></script> 
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.fancybox-media.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/script.js"></script>
-
+<?php include"include/footer.php"?>
 </body>
 </html>
