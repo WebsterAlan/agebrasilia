@@ -11,14 +11,13 @@ class Loja extends CI_Controller{
     $this->load->view('loja');
   }
 
-  public function addProdutoCarrinho($codProduto, $idSession){
+  public function addProdutoCarrinho($codProduto,$idSession){
 
       $this->load->model('product_model');
       $this->product_model->addProductCarrinho($codProduto, $idSession);
-      $listProdutos  = $this->product_model->listarProdutosCarrinho($codProduto,$idSession);
-      $this->load->view('carrinho',$listProdutos);
+      $data['listProdCarrinho'] = $this->product_model->listarProdutosCarrinho();
+      $this->load->view('carrinho',$data);
 
      }
-
 
   }

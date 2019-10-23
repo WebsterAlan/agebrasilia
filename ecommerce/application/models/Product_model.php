@@ -7,7 +7,6 @@ class Product_model extends CI_Model{
 
    $value = $this->db->get('tb_produto');
    $object = $value->result();
-   $this->listarProdutosCarrinho();
    return json_decode(json_encode($object), true);
    //var_dump($result[0]->{'id'});
  }
@@ -16,39 +15,33 @@ class Product_model extends CI_Model{
 
    $limit = 10;
    $offset = false;
-   $query = $this->db->get_where('tb_produto', array('id' => $codProduto), $limit, $offset);
-   //var_dump($query->result());
+   $query = $this->db->get_where('tb_produto', array('id' => $codProduto), $limit, $offset)->row();;
+   return $query;
  }
 
- public function addProductCarrinho(){
-   //$codProduto,$idSession,$nome,$preco,$qnt
-   //Adiciona a tb_carrinho o cod do produto,id session,nome,preco e qnt
+ public function addProductCarrinho($codProduto,$idSession){
+
+  $tbProduto = $this->listarProdutoCod($codProduto);
+  $nome = $tbProduto->nome_produto;
+  $preco =  $tbProduto->valor;
+  $nome_imagem = $tbProduto->nome_imagem;
 
    $data = array(
-        'cod' => '12345',
-        'nome' => 'testeNome',
-        'preco' => 10.2,
+        'cod' => $codProduto,
+        'nome' => $nome,
+        'preco' => $preco,
         'qnt'   => '12',
-        'sessao' => '01023'
+        'sessao' => $idSession,
+        'nome_imagem' => $nome_imagem
     );
 
    $this->db->insert('tb_carrinho', $data);
   }
 
 public function listarProdutosCarrinho(){
-
-  $this->db->select('cod');
-  $this->db->where('sessao = 01023');
-  $result = $this->db->get('tb_carrinho')->row();
-  $codProduto = $result->cod;
-
-  $limit = 2;
-  $offset = false;
-  $query = $this->db->get_where('tb_produto', array('id' => $codProduto), $limit, $offset);
-
-  //listar todos tb_carrinho com id_session e retornar os cod do produto
-  //listar array de tb_produto de acordo com cada cod de produto
-  //retorno do array objeto
+  $value = $this->db->get('tb_carrinho');
+  $object = $value->result();
+  return json_decode(json_encode($object), true);
 }
 
 

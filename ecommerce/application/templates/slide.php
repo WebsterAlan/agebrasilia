@@ -18,7 +18,7 @@
                     data-elementdelay="0.01"
                     data-endelementdelay="0.3"
                     data-endspeed="1200"
-                    data-endeasing="Power4.easeIn"><figure class="content-image"><img src="assets/images/main-slider/leaf-icon.png" alt=""></figure></div>
+                    data-endeasing="Power4.easeIn"><figure class="content-image"><img src="<?php echo base_url(); ?>assets/images/main-slider/leaf-icon.png" alt=""></figure></div>
 
                     <div class="tp-caption sft sfb tp-resizeme"
                     data-x="center" data-hoffset="0"
@@ -53,7 +53,7 @@
                     data-elementdelay="0.01"
                     data-endelementdelay="0.3"
                     data-endspeed="1200"
-                    data-endeasing="Power4.easeIn"><figure class="content-image"><img src="assets/images/main-slider/leaf-icon.png" alt=""></figure></div>
+                    data-endeasing="Power4.easeIn"><figure class="content-image"><img src="<?php echo base_url(); ?>assets/images/main-slider/leaf-icon.png" alt=""></figure></div>
 
                     <div class="tp-caption sft sfb tp-resizeme"
                     data-x="center" data-hoffset="0"
@@ -87,7 +87,7 @@
                     data-elementdelay="0.01"
                     data-endelementdelay="0.3"
                     data-endspeed="1200"
-                    data-endeasing="Power4.easeIn"><figure class="content-image"><img src="assets/images/main-slider/leaf-icon.png" alt=""></figure></div>
+                    data-endeasing="Power4.easeIn"><figure class="content-image"><img src="<?php echo base_url(); ?>assets/images/main-slider/leaf-icon.png" alt=""></figure></div>
 
                     <div class="tp-caption sft sfb tp-resizeme"
                     data-x="center" data-hoffset="0"

@@ -1,10 +1,10 @@
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="assets/js/revolution.min.js"></script>
-<script src="assets/js/jquery.fancybox.pack.js"></script>
-<script src="assets/js/jquery.fancybox-media.js"></script>
-<script src="assets/js/jquery.countdown.js"></script>
-<script src="assets/js/script.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/revolution.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery.fancybox.pack.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery.fancybox-media.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery.countdown.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/script.js"></script>
 
 
  <script type="text/javascript">

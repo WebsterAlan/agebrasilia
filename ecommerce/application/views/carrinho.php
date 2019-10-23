@@ -1,7 +1,7 @@
 <?php include "application/templates/header.php"?>
-<link rel="stylesheet" href="assets/css/jquery.modally.css">
+<link rel="stylesheet" href="<?php echo base_url();?>assets/css/jquery.modally.css">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.modally.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery.modally.js"></script>
 
 <body>
 
@@ -13,10 +13,12 @@
     <!-- Main Header-->
     <?php include "application/templates/menu.php"?>
     <!-- / Hidden Bar -->
-
+<?php
+  $listProdCarrinho;
+ ?>
 
     <!--Page Title-->
-    <section class="page-title" style="background-image:url(images/background/bg-page-title-1.jpg);">
+    <section class="page-title" style="background-image:url(<?php echo base_url();?>images/background/bg-page-title-1.jpg);">
         <div class="auto-container">
             <h1>Seu carrinho</h1>
         </div>
@@ -47,7 +49,7 @@
                             <tr>
                                 <td colspan="2" class="prod-column">
                                     <div class="column-box">
-                                        <figure class="prod-thumb"><a href="#"><img src="images/resource/products/image-12.jpg" alt=""></a></figure>
+                                        <figure class="prod-thumb"><a href="#"><img src="<?php echo base_url();?>images/resource/products/image-12.jpg" alt=""></a></figure>
                                         <div class="prod-title">Nome do Produto</div>
                                        </div>
                                 </td>

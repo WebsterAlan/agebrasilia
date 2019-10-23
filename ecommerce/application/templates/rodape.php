@@ -25,12 +25,12 @@
                     <!--Footer Column-->
                 	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 column">
                         <div class="footer-widget logo-widget">
-                            <figure class="logo-box"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></figure>
+                            <figure class="logo-box"><a href="index.html"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt=""></a></figure>
                         </div>
                     </div>
 
                     <!--Footer Column-->
-                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 column">
+                	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 column">z
                         <div class="footer-widget info-widget">
                         	<h2>ENTRE EM CONTATO</h2>
                             <ul class="info h5">
