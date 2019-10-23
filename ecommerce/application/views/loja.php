@@ -32,14 +32,14 @@
                                 <div class="item-price">R$ 124,00</div>
                             </div>
 
- <div class="text">Descrição do PRoduto informações completas do produto exmplo de texto</div>
+ <div class="text">Descrição do Produto informações completas do produto exmplo de texto</div>
 
 
 
 
                             <div class="clearfix">
                                 <div class="item-quantity"><div class="quantity-spinner"><button type="button" class="minus"><span class="fa fa-minus"></span></button><input type="text" name="product" value="1" class="prod_qty"><button type="button" class="plus"><span class="fa fa-plus"></span></button></div></div>
-                                <button type="button" class="theme-btn btn-style-one add-to-cart">Adcionar no Carrinho<span class="icon fa fa-shopping-cart"></span></button>
+                                <button type="button" class="theme-btn btn-style-one add-to-cart">Adicionar no Carrinho<span class="icon fa fa-shopping-cart"></span></button>
                             </div>
 
                         </div>

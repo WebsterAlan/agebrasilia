@@ -1,28 +1,28 @@
-<?php include "include/header.php"?>
-<link rel="stylesheet" href="jquery.modally.css">
+<?php include "application/templates/header.php"?>
+<link rel="stylesheet" href="assets/css/jquery.modally.css">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.modally.js"></script>
+<script type="text/javascript" src="assets/js/jquery.modally.js"></script>
 
 <body>
 
 <div class="page-wrapper">
- 	
+
     <!-- Preloader -->
     <div class="preloader"></div>
- 	
+
     <!-- Main Header-->
-    <?php include "include/menu.php"?>
+    <?php include "application/templates/menu.php"?>
     <!-- / Hidden Bar -->
-    
-    
+
+
     <!--Page Title-->
     <section class="page-title" style="background-image:url(images/background/bg-page-title-1.jpg);">
         <div class="auto-container">
             <h1>Seu carrinho</h1>
         </div>
     </section>
-    
-    
+
+
     <!--Cart Section-->
     <section class="cart-section">
         <div class="auto-container">
@@ -62,7 +62,7 @@
                     </table>
                 </div>
 
-               
+
 
                     <div class="pull-right"><br>
                         <button type="button" class="theme-btn btn-style-one">Atualizar</button>
@@ -91,11 +91,11 @@
 
         </div>
     </section>
-    
-    
+
+
     <!--Main Footer / Footer Style One-->
-    <?php include "include/rodape.php"?>
-    
+    <?php include "application/templates/rodape.php"?>
+
 </div>
 <!--End pagewrapper-->
 
@@ -103,6 +103,6 @@
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-long-arrow-up"></span></div>
 
 
-<?php include"include/footer.php"?>
+<?php include"application/templates/footer.php"?>
 </body>
 </html>
