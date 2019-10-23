@@ -18,6 +18,7 @@
 
 <!----------------------------MODAL PRODUTO-------------------------------------->
 
+<<<<<<< HEAD
                 <div style="font-size:14px" id="produto">
    <section class="product-details">
             <div class="auto-container">
@@ -48,6 +49,9 @@
             </div>
         </section>
                 </div>
+=======
+              
+>>>>>>> 149795313b7e69aabc12ce7b594dbdebe430865a
 <!-------------------------FIM MODAL  PRODUTO----------------------------------->
 
 
@@ -73,41 +77,89 @@
             <!------------------------------------------------------------>
             <br><br>
 
-            <div  class="row clearfix">
+            <div  class="row">
+
+              
+
+                <div class="rating"><span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star-half-empty"></span> <span class="txt">(Customer Review)</span> </div>
+
+
 
 
 
                 <!----------------Inicio Produto------------>
                 <?php foreach ($products as $product){ ?>
                   <?php
-                  echo ' <div class="default-shop-item col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                  <div style="border:0" style class="inner-box">
+                  echo '<section class="product-details">
+            <div class="container">
+                <div class="basic-details">
+                    <div class="row clearfix">
+                        <div class="image-column col-md-4 col-sm-5 col-xs-12">
+            <figure style="margin-top:35px" class="image-box"><img src="http://agebrasilia.com.br/site/up-img/1b303340210635ccd2954c2d172d2c97.jpg"></figure>
+                        </div>
+                        <div class=" col-md-8 col-sm-7 col-xs-12">
+                            <div class="details-header">
+                               <span class="txt"><b class="h1">'.$product["nome_produto"].' </b> <b class="h5">('.$product["peso"].')</b></span>
+                               <div style="color:#f5b062" class="h4">'.$product["valor"].'</div>
+                                
+                            </div>
+                            
+ <div class="text">'.$product["descricao"].'</div>
+                            
+                          
 
 
+                            <div class="clearfix">
+                                <div class="item-quantity"><div class="quantity-spinner"><button type="button" class="minus"><span class="fa fa-minus"></span></button><input type="text" name="product" value="1" class="prod_qty"><button type="button" class="plus"><span class="fa fa-plus"></span></button></div></div>
+                                <button type="button" class="theme-btn btn-style-one add-to-cart">Adcionar no Carrinho<span class="icon fa fa-shopping-cart"></span></button><div class="item-price"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>                       
+            </div>
+        </section>'
 
-                        <a href="#produto" target="_modal">
-                          <img src="http://agebrasilia.com.br/site/up-img/48f74b4088c7f7c06441bf19918ff7e3.jpg" alt="">
-                        </a>
 
-
-                      <div class="lower-content">
-                          <h3><a href="shop-single.html">'.$product["nome_produto"].'</a>  <spam>('.$product["peso"].')</spam></h3>
-                          <div class="price"><span class="price-txt">'.$product["valor"].'</span></div>
-                      </div>
-
-                      <!--Overlay Box-->
-                      <div class="overlay-box">
-                          <div class="prod-options">
-
-                              <a href="shop-single.html" class=" add-cart-btn">Comprar<span class="fa fa-shopping-cart"></span></a>
-
-                          </div>
-                      </div>
-
-                  </div>
-                </div>'; ?>
+                ; ?>
                 <?php }?>
-                <!-------------------Fim produto---->
+<!-----------------------FIM PRODUTO------------------------------>
+.$product["valor"].
+
+
+<!-----------------------FIM PRODUTO------------------------------>
+
+                <div style="font-size:14px" id="produto">
+   <section class="product-details">
+            <div class="auto-container">
+                <div class="basic-details">
+                    <div class="row clearfix">
+                        <div class="image-column col-md-4 col-sm-5 col-xs-12">
+                            <figure class="image-box"><a href="assets/images/resource/products/image-12.jpg" class="lightbox-image" title="Image Caption Here"><img src="images/resource/products/image-12.jpg" alt=""></a></figure>
+                        </div>
+                        <div class="info-column col-md-8 col-sm-7 col-xs-12">
+                            <div class="details-header">
+                                <h4>Nome do Produto</h4>
+                                <div class="item-price">R$ 124,00</div>
+                            </div>
+
+ <div class="text">Descrição do PRoduto informações completas do produto exmplo de texto</div>
+
+
+
+
+                            <div class="clearfix">
+                                <div class="item-quantity"><div class="quantity-spinner"><button type="button" class="minus"><span class="fa fa-minus"></span></button><input type="text" name="product" value="1" class="prod_qty"><button type="button" class="plus"><span class="fa fa-plus"></span></button></div></div>
+                                <button type="button" class="theme-btn btn-style-one add-to-cart">Adcionar no Carrinho<span class="icon fa fa-shopping-cart"></span></button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                </div>
+                <!-------------------Fim MODAL---->
 
             </div>
 
