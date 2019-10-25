@@ -7,7 +7,7 @@
 <div class="page-wrapper">
 <div class="preloader"></div>
 <?php include "application/templates/menu.php" ?>
-<section class="page-title" style="background-image:url(assets/images/background/bg-page-title-1.jpg);">
+<section class="page-title" style="background-image:url(<?php echo base_url(); ?>assets/images/background/bg-page-title-1.jpg);">
         <div class="auto-container">
             <h1>Produtos</h1>
         </div>
@@ -72,7 +72,7 @@
 
                             <div class="clearfix">
                                 <div class="item-quantity"><div class="quantity-spinner"><button type="button" class="minus"><span class="fa fa-minus"></span></button><input type="text" name="product" value="1" class="prod_qty"><button type="button" class="plus"><span class="fa fa-plus"></span></button></div></div>
-                              <a href="index.php/loja/addProdutoCarrinho/'.$product["id"].'/'.$session_id.'">  <button type="button"class="theme-btn btn-style-one add-to-cart">Adcionar no Carrinho<span class="icon fa fa-shopping-cart"></span></button> </a><div class="item-price"></div>
+                              <a href="http://localhost/ecommerce/index.php/loja/addProdutoCarrinho/'.$product["id"].'/'.$session_id.'">  <button type="button"class="theme-btn btn-style-one add-to-cart">Adcionar no Carrinho<span class="icon fa fa-shopping-cart"></span></button> </a><div class="item-price"></div>
                             </div>
 
                         </div>

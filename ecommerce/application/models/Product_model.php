@@ -38,8 +38,10 @@ class Product_model extends CI_Model{
    $this->db->insert('tb_carrinho', $data);
   }
 
-public function listarProdutosCarrinho(){
+public function listarProdutosCarrinho($idSession){
+  $this->db->where('sessao',$idSession);
   $value = $this->db->get('tb_carrinho');
+
   $object = $value->result();
   return json_decode(json_encode($object), true);
 }

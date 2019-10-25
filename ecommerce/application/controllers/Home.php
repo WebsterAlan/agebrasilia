@@ -15,7 +15,8 @@ class Home extends CI_Controller{
       $object = $this->product_model->listarTodosProdutos();
       $data['products'] = $object;
       $data['session_id'] = $this->session->session_id;
-      $data['listProdCarrinho'] = $this->product_model->listarProdutosCarrinho();
+      var_dump($data['session_id']);
+      $data['listProdCarrinho'] = $this->product_model->listarProdutosCarrinho($data['session_id']);
       $this->load->view('loja',$data);
     }
 }

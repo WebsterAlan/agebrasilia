@@ -4,6 +4,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Loja extends CI_Controller{
 
+
+  function __construct() {
+
+          parent::__construct();
+          $this->load->model('product_model');
+          $this->load->library('session');
+      }
+
   public function listAllProducts(){
 
     $this->load->model('product_model');
@@ -15,8 +23,12 @@ class Loja extends CI_Controller{
 
       $this->load->model('product_model');
       $this->product_model->addProductCarrinho($codProduto, $idSession);
-      $data['listProdCarrinho'] = $this->product_model->listarProdutosCarrinho();
-      $this->load->view('carrinho',$data);
+      $object = $this->product_model->listarTodosProdutos();
+      $data['session_id'] = $this->session->session_id;
+      var_dump($data['session_id']);
+      $data['products'] = $object;
+      $data['listProdCarrinho'] = $this->product_model->listarProdutosCarrinho($data['session_id']);
+      $this->load->view('loja',$data);
 
      }
 
